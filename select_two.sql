@@ -30,3 +30,4 @@ SELECT * FROM Products WHERE Price BETWEEN 20 AND 30;
 
 -- Erstelle eine Liste, die die Anzahl der Produkte pro Kategorie anzeigt.
 
+SELECT CategoryID, COUNT (ProductID) AS AnzahlDerProdukte FROM Products GROUP BY CategoryID;
